@@ -22,34 +22,19 @@
     	<table class="table table-hover">
     	<tr>
     		<th>Дата</th>
-	  			<td>от<br><input type="date"></td>
+	  			<td colspan="2">от<br><input type="date"></td>
 	  			<td>до<br><input type="date"></td>
 		</tr>
 
 		<tr>
     		<th>Длительность звонка</th>
-	  			<td>от<br><input type="time"></td>
+	  			<td colspan="2">от<br><input type="time"></td>
 	  			<td>до<br><input type="time"></td>
 		</tr>
 
 		<tr>
-    		<th>Номер телефона</th>
-	  			<td colspan="2"><input type="text"></td>
-		</tr>
-
-		<tr>
-    		<th>Источник звонка</th>
-	  			<td colspan="2"><input type="text"></td>
-		</tr>
-
-		<tr>
-    		<th>Комментарий</th>
-	  			<td colspan="2"><textarea name="comment" cols="40" rows="3"></textarea></td>
-		</tr>
-
-		<tr>
     		<th>Рейтинг звонка</th>
-    			<td>от<br>
+    			<td colspan="2">от<br>
 		  			<input list="from-rating">
 					   <datalist id="from-rating">
 						    <option>не выбрано</option>
@@ -75,42 +60,43 @@
 		</tr>
 
 		<tr>
+    		<th>Номер телефона</th>
+	  			<td><input type="text"></td>
+	  			<th>Источник звонка</th>
+	  			<td><input type="text"></td>
+		</tr>
+
+		<tr>
     		<th>Статус звонка</th>
-	  			<td colspan="2">
+	  			<td>
 	  				<input list="call">
 	  					<datalist id="call">
 						    <option>звонок был</option>
 						    <option>звонка не было</option>
 					   </datalist>
-				</td>
-		</tr>
 
-		<tr>
-    		<th>Регион</th>
-	  			<td colspan="2">
+					   <th>Регион</th>
+	  			<td>
 	  				<input list="region">
 	  					<datalist id="region">
 						    <option>Москва</option>
 						    <option>Санкт-Петербург</option>
 					   </datalist>
 				</td>
+				</td>
 		</tr>
 
 		<tr>
     		<th>Тип звонка</th>
-	  			<td colspan="2">
+	  			<td>
 	  				<input list="type-call">
 	  					<datalist id="type-call">
 						    <option>Прямой подменный</option>
 						    <option>обратный</option>
 					   </datalist>
-				</td>
-		</tr>
 
-
-		<tr>
-    		<th>Итоговый статус</th>
-	  			<td colspan="2">
+					   <th>Итоговый статус</th>
+	  			<td>
 	  				<input list="final-status">
 	  					<datalist id="final-status">
 						    <option>не важно</option>
@@ -118,11 +104,12 @@
 						    <option>не целевой</option>
 					   </datalist>
 				</td>
+				</td>
 		</tr>
 
 		<tr>
     		<th>Статус системы</th>
-	  			<td colspan="2">
+	  			<td>
 	  				<input list="system-status">
 	  					<datalist id="system-status">
 						    <option>не важно</option>
@@ -130,10 +117,8 @@
 						    <option>не целевой</option>
 					   </datalist>
 				</td>
-		</tr>
 
-		<tr>
-    		<th>Статус менеджера</th>
+				<th>Статус менеджера</th>
 	  			<td colspan="2">
 	  				<input list="manager-status">
 	  					<datalist id="manager-status">
@@ -144,9 +129,11 @@
 				</td>
 		</tr>
 
+
+
 		<tr>
     		<th>Статус клиента</th>
-	  			<td colspan="2">
+	  			<td>
 	  				<input list="client-status">
 	  					<datalist id="client-status">
 						    <option>не важно</option>
@@ -154,11 +141,9 @@
 						    <option>не целевой</option>
 					   </datalist>
 				</td>
-		</tr>
 
-		<tr>
-    		<th>Группировка звонков</th>
-	  			<td colspan="2">
+				<th>Группировка звонков</th>
+	  			<td>
 	  				<input list="call-grouping">
 	  					<datalist id="call-grouping">
 						    <option>все звонки</option>
@@ -168,17 +153,17 @@
 		</tr>
 
 		<tr>
-			<td colspan="3">
+    		<th>Комментарий</th>
+	  			<td colspan="6"><textarea name="comment" cols="50" rows="3"></textarea></td>
+		</tr>
+		
+		<tr>
+			<td colspan="6">
 				<button type="button" class="btn btn-success btn-block">
 				Поиск
 				</button>
 			</td>
 		</tr>
-
-
-
-
-
 
 
 

@@ -1,4 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2:200');
+
+body {
+	font-family: 'Exo 2', sans-serif;
+}
+
 .tab-tab {
-	width  : 50%;
+	width: 50%;
 	margin : 0 auto;
+}
+
+input,
+textarea {
+	border-radius: 5px;
 }
