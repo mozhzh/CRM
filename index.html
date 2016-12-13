@@ -8,6 +8,7 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -17,8 +18,172 @@
     <![endif]-->
   </head>
   <body>
-    <h1>Привет, мир!</h1>
+  <div class="tab-tab">
+    	<table class="table table-hover">
+    	<tr>
+    		<th>Дата</th>
+	  			<td>от<br><input type="date"></td>
+	  			<td>до<br><input type="date"></td>
+		</tr>
 
+		<tr>
+    		<th>Длительность звонка</th>
+	  			<td>от<br><input type="time"></td>
+	  			<td>до<br><input type="time"></td>
+		</tr>
+
+		<tr>
+    		<th>Номер телефона</th>
+	  			<td><input type="text"></td>
+		</tr>
+
+		<tr>
+    		<th>Источник звонка</th>
+	  			<td><input type="text"></td>
+		</tr>
+
+		<tr>
+    		<th>Комментарий</th>
+	  			<td><textarea name="comment" cols="40" rows="3"></textarea></td>
+		</tr>
+
+		<tr>
+    		<th>Рейтинг звонка</th>
+    			<td>от<br>
+		  			<input list="from-rating">
+					   <datalist id="from-rating">
+						    <option>не выбрано</option>
+						    <option>1</option>
+						    <option>2</option>
+						    <option>3</option>
+						    <option>4</option>
+						    <option>5</option>
+					   </datalist>
+				</td>
+
+				<td>до<br> 
+		  			<input list="to-rating">
+					   <datalist id="to-rating">
+						    <option>не выбрано</option>
+						    <option>1</option>
+						    <option>2</option>
+						    <option>3</option>
+						    <option>4</option>
+						    <option>5</option>
+					   </datalist>
+				</td>
+		</tr>
+
+		<tr>
+    		<th>Статус звонка</th>
+	  			<td>
+	  				<input list="call">
+	  					<datalist id="call">
+						    <option>звонок был</option>
+						    <option>звонка не было</option>
+					   </datalist>
+				</td>
+		</tr>
+
+		<tr>
+    		<th>Регион</th>
+	  			<td>
+	  				<input list="region">
+	  					<datalist id="region">
+						    <option>Москва</option>
+						    <option>Санкт-Петербург</option>
+					   </datalist>
+				</td>
+		</tr>
+
+		<tr>
+    		<th>Тип звонка</th>
+	  			<td>
+	  				<input list="type-call">
+	  					<datalist id="type-call">
+						    <option>Прямой подменный</option>
+						    <option>обратный</option>
+					   </datalist>
+				</td>
+		</tr>
+
+
+		<tr>
+    		<th>Итоговый статус</th>
+	  			<td>
+	  				<input list="final-status">
+	  					<datalist id="final-status">
+						    <option>не важно</option>
+						    <option>целевой</option>
+						    <option>не целевой</option>
+					   </datalist>
+				</td>
+		</tr>
+
+		<tr>
+    		<th>Статус системы</th>
+	  			<td>
+	  				<input list="system-status">
+	  					<datalist id="system-status">
+						    <option>не важно</option>
+						    <option>целевой</option>
+						    <option>не целевой</option>
+					   </datalist>
+				</td>
+		</tr>
+
+		<tr>
+    		<th>Статус менеджера</th>
+	  			<td>
+	  				<input list="manager-status">
+	  					<datalist id="manager-status">
+						    <option>не важно</option>
+						    <option>целевой</option>
+						    <option>не целевой</option>
+					   </datalist>
+				</td>
+		</tr>
+
+		<tr>
+    		<th>Статус клиента</th>
+	  			<td>
+	  				<input list="client-status">
+	  					<datalist id="client-status">
+						    <option>не важно</option>
+						    <option>целевой</option>
+						    <option>не целевой</option>
+					   </datalist>
+				</td>
+		</tr>
+
+		<tr>
+    		<th>Группировка звонков</th>
+	  			<td>
+	  				<input list="call-grouping">
+	  					<datalist id="call-grouping">
+						    <option>все звонки</option>
+						    <option>только уникальные</option>
+					   </datalist>
+				</td>
+		</tr>
+
+		<tr>
+			<th>
+				<button type="button" class="btn btn-success btn-block">
+				Поиск
+				</button>
+			</th>
+		</tr>
+
+
+
+
+
+
+
+
+			</table>
+		</div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
