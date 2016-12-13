@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,158 +10,160 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
 
+    <script src="js/functions.js"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
-  <body>
-  <div class="tab-tab">
-    	<table class="table table-hover">
-    	<tr>
-    		<th>Дата</th>
-	  			<td colspan="2">от&#160;<input type="date"></td>
-	  			<td>до&#160;<input type="date"></td>
-		</tr>
+</head>
+<body>
+<div id="findForm">
+    <div class="tab-tab">
+        <table class="table table-hover">
+            <tr>
+                <th>Дата</th>
+                <td colspan="2">от&#160;<input type="date"></td>
+                <td>до&#160;<input type="date"></td>
+            </tr>
 
-		<tr>
-    		<th>Длительность звонка</th>
-	  			<td colspan="2">от&#160;<input type="time"></td>
-	  			<td>до&#160;	<input type="time"></td>
-		</tr>
+            <tr>
+                <th>Длительность звонка</th>
+                <td colspan="2">от&#160;<input type="time"></td>
+                <td>до&#160; <input type="time"></td>
+            </tr>
 
-		<tr>
-    		<th>Рейтинг звонка</th>
-    			<td colspan="2">от
-					   <select class="from-rating">
-						    <option>не выбрано</option>
-						    <option>1</option>
-						    <option>2</option>
-						    <option>3</option>
-						    <option>4</option>
-						    <option>5</option>
-					   </select>
-				</td>
+            <tr>
+                <th>Рейтинг звонка</th>
+                <td colspan="2">от
+                    <select class="from-rating">
+                        <option>не выбрано</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </td>
 
-				<td>до
-					   <select class="to-rating">
-						    <option>не выбрано</option>
-						    <option>1</option>
-						    <option>2</option>
-						    <option>3</option>
-						    <option>4</option>
-						    <option>5</option>
-					   </select>
-				</td>
-		</tr>
+                <td>до
+                    <select class="to-rating">
+                        <option>не выбрано</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </td>
+            </tr>
 
-		<tr>
-    		<th>Номер телефона</th>
-	  			<td><input type="text"></td>
-	  			<th>Источник звонка</th>
-	  			<td><input type="text"></td>
-		</tr>
+            <tr>
+                <th>Номер телефона</th>
+                <td><input type="text"></td>
+                <th>Источник звонка</th>
+                <td><input type="text"></td>
+            </tr>
 
-		<tr>
-    		<th>Статус звонка</th>
-	  			<td>
-	  					<select class="call">
-						    <option>звонок был</option>
-						    <option>звонка не было</option>
-					   </select>
+            <tr>
+                <th>Статус звонка</th>
+                <td>
+                    <select class="call">
+                        <option>звонок был</option>
+                        <option>звонка не было</option>
+                    </select>
 
-					   <th>Регион</th>
-	  			<td>
-	  					<select class="region">
-						    <option>Москва</option>
-						    <option>Санкт-Петербург</option>
-					   </select>
-				</td>
-				</td>
-		</tr>
+                <th>Регион</th>
+                <td>
+                    <select class="region">
+                        <option>Москва</option>
+                        <option>Санкт-Петербург</option>
+                    </select>
+                </td>
+                </td>
+            </tr>
 
-		<tr>
-    		<th>Тип звонка</th>
-	  			<td>
-	  					<select class="type-call">
-						    <option>Прямой подменный</option>
-						    <option>обратный</option>
-					   </select>
+            <tr>
+                <th>Тип звонка</th>
+                <td>
+                    <select class="type-call">
+                        <option>Прямой подменный</option>
+                        <option>обратный</option>
+                    </select>
 
-					   <th>Итоговый статус</th>
-	  			<td>
-	  					<select class="final-status">
-						    <option>не важно</option>
-						    <option>целевой</option>
-						    <option>не целевой</option>
-					   </select>
-				</td>
-				</td>
-		</tr>
+                <th>Итоговый статус</th>
+                <td>
+                    <select class="final-status">
+                        <option>не важно</option>
+                        <option>целевой</option>
+                        <option>не целевой</option>
+                    </select>
+                </td>
+                </td>
+            </tr>
 
-		<tr>
-    		<th>Статус системы</th>
-	  			<td>
-	  					<select class="system-status">
-						    <option>не важно</option>
-						    <option>целевой</option>
-						    <option>не целевой</option>
-					   </select>
-				</td>
+            <tr>
+                <th>Статус системы</th>
+                <td>
+                    <select class="system-status">
+                        <option>не важно</option>
+                        <option>целевой</option>
+                        <option>не целевой</option>
+                    </select>
+                </td>
 
-				<th>Статус менеджера</th>
-	  			<td colspan="2">
-	  					<select class="manager-status">
-						    <option>не важно</option>
-						    <option>целевой</option>
-						    <option>не целевой</option>
-					   </select>
-				</td>
-		</tr>
-
-
-
-		<tr>
-    		<th>Статус клиента</th>
-	  			<td>
-	  					<select class="client-status">
-						    <option>не важно</option>
-						    <option>целевой</option>
-						    <option>не целевой</option>
-					   </select>
-				</td>
-
-				<th>Группировка звонков</th>
-	  			<td>
-	  					<select class="call-grouping">
-						    <option>все звонки</option>
-						    <option>только уникальные</option>
-					   </select>
-				</td>
-		</tr>
-
-		<tr>
-    		<th>Комментарий</th>
-	  			<td colspan="6"><textarea name="comment" cols="50" rows="3"></textarea></td>
-		</tr>
-
-		<tr>
-			<td colspan="6">
-				<button type="button" class="btn btn-success btn-block">
-				Поиск
-				</button>
-			</td>
-		</tr>
+                <th>Статус менеджера</th>
+                <td colspan="2">
+                    <select class="manager-status">
+                        <option>не важно</option>
+                        <option>целевой</option>
+                        <option>не целевой</option>
+                    </select>
+                </td>
+            </tr>
 
 
+            <tr>
+                <th>Статус клиента</th>
+                <td>
+                    <select class="client-status">
+                        <option>не важно</option>
+                        <option>целевой</option>
+                        <option>не целевой</option>
+                    </select>
+                </td>
 
-			</table>
-		</div>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-  </body>
+                <th>Группировка звонков</th>
+                <td>
+                    <select class="call-grouping">
+                        <option>все звонки</option>
+                        <option>только уникальные</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <th>Комментарий</th>
+                <td colspan="6"><textarea name="comment" cols="50" rows="3"></textarea></td>
+            </tr>
+
+            <tr>
+                <td colspan="6">
+                    <button type="button" class="btn btn-success btn-block" onclick="clickFindButton()">
+                        Поиск
+                    </button>
+                </td>
+            </tr>
+
+
+        </table>
+    </div>
+</div>
+<div id="findFormLabel" onclick="clickFindFormLabel()">Нажми на меня, здесь отбор</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+</body>
 </html>
