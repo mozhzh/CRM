@@ -20,144 +20,141 @@
 </head>
 <body>
 <div id="findForm">
-    <div class="tab-tab">
-        <table class="table table-hover">
-            <tr>
-                <th>Дата</th>
-                <td colspan="2">от&#160;<input type="date"></td>
-                <td>до&#160;<input type="date"></td>
-            </tr>
+    <div class="container-fluid">
 
-            <tr>
-                <th>Длительность звонка</th>
-                <td colspan="2">от&#160;<input type="time"></td>
-                <td>до&#160; <input type="time"></td>
-            </tr>
-
-            <tr>
-                <th>Рейтинг звонка</th>
-                <td colspan="2">от
-                    <select class="from-rating">
-                        <option>не выбрано</option>
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                    </select>
-                </td>
-
-                <td>до
-                    <select class="to-rating">
-                        <option>не выбрано</option>
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                    </select>
-                </td>
-            </tr>
-
-            <tr>
-                <th>Номер телефона</th>
-                <td><input type="text"></td>
-                <th>Источник звонка</th>
-                <td><input type="text"></td>
-            </tr>
-
-            <tr>
-                <th>Статус звонка</th>
-                <td>
-                    <select class="call">
-                        <option>звонок был</option>
-                        <option>звонка не было</option>
-                    </select>
-
-                <th>Регион</th>
-                <td>
-                    <select class="region">
-                        <option>Москва</option>
-                        <option>Санкт-Петербург</option>
-                    </select>
-                </td>
-                </td>
-            </tr>
-
-            <tr>
-                <th>Тип звонка</th>
-                <td>
-                    <select class="type-call">
-                        <option>Прямой подменный</option>
-                        <option>обратный</option>
-                    </select>
-
-                <th>Итоговый статус</th>
-                <td>
-                    <select class="final-status">
-                        <option>не важно</option>
-                        <option>целевой</option>
-                        <option>не целевой</option>
-                    </select>
-                </td>
-                </td>
-            </tr>
-
-            <tr>
-                <th>Статус системы</th>
-                <td>
-                    <select class="system-status">
-                        <option>не важно</option>
-                        <option>целевой</option>
-                        <option>не целевой</option>
-                    </select>
-                </td>
-
-                <th>Статус менеджера</th>
-                <td colspan="2">
-                    <select class="manager-status">
-                        <option>не важно</option>
-                        <option>целевой</option>
-                        <option>не целевой</option>
-                    </select>
-                </td>
-            </tr>
+    <div class="row">
+        <div class="col-md-2">Дата</div>
+        <div class="col-md-2">от<input class="form-control" type="date"></div>
+        <div class="col-md-2">до<input class="form-control" type="date"></div>
+        <div class="col-md-2">Длительность звонка</div>
+        <div class="col-md-2">от<input class="form-control" type="time"></div>
+        <div class="col-md-2">до<input class="form-control" type="time"></div>
+    </div>
 
 
-            <tr>
-                <th>Статус клиента</th>
-                <td>
-                    <select class="client-status">
-                        <option>не важно</option>
-                        <option>целевой</option>
-                        <option>не целевой</option>
-                    </select>
-                </td>
+    <div class="row">
+        <div class="col-md-2">Рейтинг звонка</div>
+        <div class="col-md-2">от
+            <select class="form-control">
+                <option>не выбрано</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+        </div>
 
-                <th>Группировка звонков</th>
-                <td>
-                    <select class="call-grouping">
-                        <option>все звонки</option>
-                        <option>только уникальные</option>
-                    </select>
-                </td>
-            </tr>
+        <div class="col-md-2">до
+            <select class="form-control">
+                <option>не выбрано</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+        </div>
 
-            <tr>
-                <th>Комментарий</th>
-                <td colspan="6"><textarea name="comment" cols="50" rows="3"></textarea></td>
-            </tr>
+        <div class="col-md-2">Номер телефона</div>
+        <div class="col-md-4"><input class="form-control" type="text"></div>
+    </div>
 
-            <tr>
-                <td colspan="6">
-                    <button type="button" class="btn btn-success btn-block" onclick="clickFindButton()">
-                        Поиск
-                    </button>
-                </td>
-            </tr>
+        <div class="row">
+
+            <div class="col-md-2">Источник звонка</div>
+            <div class="col-md-4"><input class="form-control" type="text"></div>
+            <div class="col-md-2">РК:</div>
+            <div class="col-md-4"><input class="form-control" type="text"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-2">Статус звонка</div>
+            <div class="col-md-4">
+                <select class="form-control">
+                    <option>звонок был</option>
+                    <option>звонка не было</option>
+                </select>
+            </div>
+            <div class="col-md-2">Регион</div>
+            <div class="col-md-4">
+                <select class="form-control">
+                    <option>Москва</option>
+                    <option>Санкт-Петербург</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-2">Тип звонка</div>
+            <div class="col-md-4">
+                <select class="form-control">
+                    <option>Прямой подменный</option>
+                    <option>обратный</option>
+                </select>
+            </div>
+            <div class="col-md-2">Итоговый статус</div>
+            <div class="col-md-4">
+                <select class="form-control">
+                    <option>не важно</option>
+                    <option>целевой</option>
+                    <option>не целевой</option>
+                </select>
+            </div>
+        </div>
 
 
-        </table>
+        <div class="row">
+            <div class="col-md-2">Статус системы</div>
+            <div class="col-md-4">
+                <select class="form-control">
+                    <option>не важно</option>
+                    <option>целевой</option>
+                    <option>не целевой</option>
+                </select>
+            </div>
+            <div class="col-md-2">Статус менеджера</div>
+            <div class="col-md-4">
+                <select class="form-control">
+                    <option>не важно</option>
+                    <option>целевой</option>
+                    <option>не целевой</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-2">Статус клиента</div>
+            <div class="col-md-4">
+                <select class="form-control">
+                    <option>не важно</option>
+                    <option>целевой</option>
+                    <option>не целевой</option>
+                </select>
+            </div>
+            <div class="col-md-2">Группировка звонков</div>
+            <div class="col-md-4">
+                <select class="form-control">
+                    <option>все звонки</option>
+                    <option>только уникальные</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-2">Комментарий</div>
+            <div class="col-md-10">
+                <textarea class="form-control" name="comment" cols="50" rows="3"></textarea>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12"><button type="button" class="btn btn-success btn-block" onclick="clickFindButton()">
+                Поиск
+            </button></div>
+        </div>
+
+
     </div>
 </div>
 <div id="findFormLabel" onclick="clickFindFormLabel()">Нажми на меня, здесь отбор</div>
