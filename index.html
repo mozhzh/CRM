@@ -22,40 +22,38 @@
     	<table class="table table-hover">
     	<tr>
     		<th>Дата</th>
-	  			<td colspan="2">от<br><input type="date"></td>
-	  			<td>до<br><input type="date"></td>
+	  			<td colspan="2">от&#160;<input type="date"></td>
+	  			<td>до&#160;<input type="date"></td>
 		</tr>
 
 		<tr>
     		<th>Длительность звонка</th>
-	  			<td colspan="2">от<br><input type="time"></td>
-	  			<td>до<br><input type="time"></td>
+	  			<td colspan="2">от&#160;<input type="time"></td>
+	  			<td>до&#160;	<input type="time"></td>
 		</tr>
 
 		<tr>
     		<th>Рейтинг звонка</th>
-    			<td colspan="2">от<br>
-		  			<input list="from-rating">
-					   <datalist id="from-rating">
+    			<td colspan="2">от
+					   <select class="from-rating">
 						    <option>не выбрано</option>
 						    <option>1</option>
 						    <option>2</option>
 						    <option>3</option>
 						    <option>4</option>
 						    <option>5</option>
-					   </datalist>
+					   </select>
 				</td>
 
-				<td>до<br> 
-		  			<input list="to-rating">
-					   <datalist id="to-rating">
+				<td>до
+					   <select class="to-rating">
 						    <option>не выбрано</option>
 						    <option>1</option>
 						    <option>2</option>
 						    <option>3</option>
 						    <option>4</option>
 						    <option>5</option>
-					   </datalist>
+					   </select>
 				</td>
 		</tr>
 
@@ -69,19 +67,17 @@
 		<tr>
     		<th>Статус звонка</th>
 	  			<td>
-	  				<input list="call">
-	  					<datalist id="call">
+	  					<select class="call">
 						    <option>звонок был</option>
 						    <option>звонка не было</option>
-					   </datalist>
+					   </select>
 
 					   <th>Регион</th>
 	  			<td>
-	  				<input list="region">
-	  					<datalist id="region">
+	  					<select class="region">
 						    <option>Москва</option>
 						    <option>Санкт-Петербург</option>
-					   </datalist>
+					   </select>
 				</td>
 				</td>
 		</tr>
@@ -89,20 +85,18 @@
 		<tr>
     		<th>Тип звонка</th>
 	  			<td>
-	  				<input list="type-call">
-	  					<datalist id="type-call">
+	  					<select class="type-call">
 						    <option>Прямой подменный</option>
 						    <option>обратный</option>
-					   </datalist>
+					   </select>
 
 					   <th>Итоговый статус</th>
 	  			<td>
-	  				<input list="final-status">
-	  					<datalist id="final-status">
+	  					<select class="final-status">
 						    <option>не важно</option>
 						    <option>целевой</option>
 						    <option>не целевой</option>
-					   </datalist>
+					   </select>
 				</td>
 				</td>
 		</tr>
@@ -110,22 +104,20 @@
 		<tr>
     		<th>Статус системы</th>
 	  			<td>
-	  				<input list="system-status">
-	  					<datalist id="system-status">
+	  					<select class="system-status">
 						    <option>не важно</option>
 						    <option>целевой</option>
 						    <option>не целевой</option>
-					   </datalist>
+					   </select>
 				</td>
 
 				<th>Статус менеджера</th>
 	  			<td colspan="2">
-	  				<input list="manager-status">
-	  					<datalist id="manager-status">
+	  					<select class="manager-status">
 						    <option>не важно</option>
 						    <option>целевой</option>
 						    <option>не целевой</option>
-					   </datalist>
+					   </select>
 				</td>
 		</tr>
 
@@ -134,21 +126,19 @@
 		<tr>
     		<th>Статус клиента</th>
 	  			<td>
-	  				<input list="client-status">
-	  					<datalist id="client-status">
+	  					<select class="client-status">
 						    <option>не важно</option>
 						    <option>целевой</option>
 						    <option>не целевой</option>
-					   </datalist>
+					   </select>
 				</td>
 
 				<th>Группировка звонков</th>
 	  			<td>
-	  				<input list="call-grouping">
-	  					<datalist id="call-grouping">
+	  					<select class="call-grouping">
 						    <option>все звонки</option>
 						    <option>только уникальные</option>
-					   </datalist>
+					   </select>
 				</td>
 		</tr>
 
@@ -156,7 +146,7 @@
     		<th>Комментарий</th>
 	  			<td colspan="6"><textarea name="comment" cols="50" rows="3"></textarea></td>
 		</tr>
-		
+
 		<tr>
 			<td colspan="6">
 				<button type="button" class="btn btn-success btn-block">
