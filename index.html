@@ -21,21 +21,44 @@
 <body>
 <div id="findForm">
     <div class="container-fluid">
-
     <div class="row">
-        <div class="col-md-2">Дата</div>
-        <div class="col-md-2">от<input class="form-control" type="date"></div>
-        <div class="col-md-2">до<input class="form-control" type="date"></div>
+        <div class="col-md-2">
+            Дата
+        </div>
+        <div class="col-md-2">
+            <form>
+                <label for="from-date">от</label>
+            <input class="form-control" type="date" id="from-date">
+            </form>
+        </div>
+        <div class="col-md-2">
+            <form>
+                <label for="to-date">до</label>
+            <input class="form-control" type="date" id="to-date">
+            </form>
+        </div>
         <div class="col-md-2">Длительность звонка</div>
-        <div class="col-md-2">от<input class="form-control" type="time"></div>
-        <div class="col-md-2">до<input class="form-control" type="time"></div>
+        <div class="col-md-2">
+            <form>
+                <label for="from-call">от</label>
+            <input class="form-control" type="time" id="from-call">
+            </form>
+        </div>
+        <div class="col-md-2">
+            <form>
+                <label for="to-call">до</label>
+            <input class="form-control" type="time" id="to-call">
+            </form>
+        </div>
     </div>
-
-
     <div class="row">
-        <div class="col-md-2">Рейтинг звонка</div>
-        <div class="col-md-2">от
-            <select class="form-control">
+        <div class="col-md-2">
+            Рейтинг звонка
+        </div>
+        <div class="col-md-2">
+            <form>
+                <label for="from-rating-call">от</label>
+            <select class="form-control" id="from-rating-call">
                 <option>не выбрано</option>
                 <option>1</option>
                 <option>2</option>
@@ -43,10 +66,12 @@
                 <option>4</option>
                 <option>5</option>
             </select>
+            </form>
         </div>
-
-        <div class="col-md-2">до
-            <select class="form-control">
+        <div class="col-md-2">
+            <form>
+                <label for="to-rating-call">до</label>
+            <select class="form-control" id="to-rating-call">
                 <option>не выбрано</option>
                 <option>1</option>
                 <option>2</option>
@@ -54,31 +79,37 @@
                 <option>4</option>
                 <option>5</option>
             </select>
+            </form>
         </div>
-
         <div class="col-md-2">Номер телефона</div>
-        <div class="col-md-4"><input class="form-control" type="text"></div>
-    </div>
-
-        <div class="row">
-
-            <div class="col-md-2">Источник звонка</div>
-            <div class="col-md-4"><input class="form-control" type="text"></div>
-            <div class="col-md-2">РК:</div>
-            <div class="col-md-4"><input class="form-control" type="text"></div>
+        <div class="col-md-4">
+            <form>
+                <input id="phone" class="form-control" type="text">
+            </form>
         </div>
-
+    </div>
+    </div>
+        <div class="row">
+            <div class="col-md-2">Источник звонка</div>
+            <div class="col-md-4">
+                <input class="form-control" type="text" id="call-source">
+            </div>
+            <div class="col-md-2">РК содержит</div>
+            <div class="col-md-4">
+                <input id="rc" class="form-control" type="text" id="rc-contains">
+            </div>
+        </div>
         <div class="row">
             <div class="col-md-2">Статус звонка</div>
             <div class="col-md-4">
-                <select class="form-control">
+                <select class="form-control" id="status-call">
                     <option>звонок был</option>
                     <option>звонка не было</option>
                 </select>
             </div>
             <div class="col-md-2">Регион</div>
             <div class="col-md-4">
-                <select class="form-control">
+                <select class="form-control" id="region">
                     <option>Москва</option>
                     <option>Санкт-Петербург</option>
                 </select>
@@ -88,14 +119,14 @@
         <div class="row">
             <div class="col-md-2">Тип звонка</div>
             <div class="col-md-4">
-                <select class="form-control">
+                <select class="form-control" id="type-call">
                     <option>Прямой подменный</option>
                     <option>обратный</option>
                 </select>
             </div>
             <div class="col-md-2">Итоговый статус</div>
             <div class="col-md-4">
-                <select class="form-control">
+                <select class="form-control" id="final-status">
                     <option>не важно</option>
                     <option>целевой</option>
                     <option>не целевой</option>
@@ -107,7 +138,7 @@
         <div class="row">
             <div class="col-md-2">Статус системы</div>
             <div class="col-md-4">
-                <select class="form-control">
+                <select class="form-control" id="final-system">
                     <option>не важно</option>
                     <option>целевой</option>
                     <option>не целевой</option>
@@ -115,7 +146,7 @@
             </div>
             <div class="col-md-2">Статус менеджера</div>
             <div class="col-md-4">
-                <select class="form-control">
+                <select class="form-control" id="status-manager">
                     <option>не важно</option>
                     <option>целевой</option>
                     <option>не целевой</option>
@@ -126,7 +157,7 @@
         <div class="row">
             <div class="col-md-2">Статус клиента</div>
             <div class="col-md-4">
-                <select class="form-control">
+                <select class="form-control" id="status-client">
                     <option>не важно</option>
                     <option>целевой</option>
                     <option>не целевой</option>
@@ -134,7 +165,7 @@
             </div>
             <div class="col-md-2">Группировка звонков</div>
             <div class="col-md-4">
-                <select class="form-control">
+                <select class="form-control" id="group-call">
                     <option>все звонки</option>
                     <option>только уникальные</option>
                 </select>
@@ -143,8 +174,12 @@
 
         <div class="row">
             <div class="col-md-2">Комментарий</div>
-            <div class="col-md-10">
-                <textarea class="form-control" name="comment" cols="50" rows="3"></textarea>
+            <div class="col-md-4">
+                <textarea class="form-control" name="comment" cols="50" rows="2" id="comment"></textarea>
+            </div>
+                    <div class="col-md-2">РК не содержит</div>
+                    <div class="col-md-4"><input  class="form-control" type="text" id="rc-does-not"></div>
+
             </div>
         </div>
 
@@ -154,8 +189,9 @@
             </button></div>
         </div>
 
-
+    </form>
     </div>
+
 </div>
 <div id="findFormLabel" onclick="clickFindFormLabel()">Нажми на меня, здесь отбор</div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
